@@ -18,277 +18,249 @@ Teleport:
     length: 80
     fade-in: 0
     fade-out: 10
-    '0': <gray><b>Teleporting...
-    '20': <aqua>></aqua> <gray><b>Teleporting...</b></gray> <aqua><
-    '40': <aqua>>></aqua> <gray><b>Teleporting...</b></gray> <aqua><<
+    '0': <gray><b>传送中...
+    '20': <aqua>></aqua> <gray><b>传送中...</b></gray> <aqua><
+    '40': <aqua>>></aqua> <gray><b>传送中...</b></gray> <aqua><<
     '60': <aqua>>>> <b><yellow>Teleported!</yellow></b> <aqua><<<
   eventBeforeTP_subtitle:
-    '0': <aqua>Please do not move!
+    '0': <aqua>请不要移动!
     '60': ''
-  eventBeforeTPMovementAllowed: <prefix> <gray>Teleporting in <aqua><countdown></aqua>
-    seconds!
-  eventTeleport: <prefix> <gray>Teleporting...
-  eventMovement: <prefix> <gray>Teleport has been cancelled due to movement.
+  eventBeforeTPMovementAllowed: <prefix> <gray>传送将发生在 <aqua><countdown></aqua>
+    秒后!
+  eventTeleport: <prefix> <gray>传送中...
+  eventMovement: <prefix> <gray>传送因移动而被取消.
   eventMovement_title:
     length: 60
     fade-in: 0
     fade-out: 10
-    '0': <yellow><b>! <red>Cancelled</red> !
-  teleportingToSpawn: <prefix> <gray>Teleporting you to spawn!
-  teleporting: <prefix> <gray>Teleporting to <aqua><player></aqua>!
-  teleportingToHome: <prefix> <gray>Teleporting to <aqua><home></aqua>!
-  teleportingToHomeOther: <prefix> <gray>Teleporting to <aqua><player></aqua>'s home,
+    '0': <yellow><b>! <red>取消</red> !
+  teleportingToSpawn: <prefix> <gray>传送到出生点!
+  teleporting: <prefix> <gray>传送到 <aqua><player></aqua>!
+  teleportingToHome: <prefix> <gray>传送到 <aqua><home></aqua>!
+  teleportingToHomeOther: <prefix> <gray>传送到 <aqua><player></aqua>的家,
     <aqua><home></aqua>!
-  teleportingToWarp: <prefix> <gray>Teleporting you to <aqua><warp></aqua>!
-  teleportingPlayerToSelf: <prefix> <gray>Teleporting <aqua><player></aqua> to you!
-  teleportingSelfToPlayer: <prefix> <gray>Teleporting you to <aqua><player></aqua>!
-  teleportingToRandomPlace: <prefix> <gray>Teleporting you to a random place!
-  teleportingToLastLoc: <prefix> <gray>Teleporting to your last location!
-  teleportedToOfflinePlayer: <prefix> <gray>Teleported to offline player <aqua><player></aqua>!
-  teleportedOfflinePlayerHere: <prefix> <gray>Teleported offline player <aqua><player></aqua>
-    to your location!
+  teleportingToWarp: <prefix> <gray>传送到 <aqua><warp></aqua>!
+  teleportingPlayerToSelf: <prefix> <gray>传送 <aqua><player></aqua> 到你!
+  teleportingSelfToPlayer: <prefix> <gray>传送你到 <aqua><player></aqua>!
+  teleportingToRandomPlace: <prefix> <gray>将你传送到一个随机的地方!
+  teleportingToLastLoc: <prefix> <gray>传送到你的最后一个位置!
+  teleportedToOfflinePlayer: <prefix> <gray>传送到离线玩家 <aqua><player></aqua>!
+  teleportedOfflinePlayerHere: <prefix> <gray>传送离线玩家 <aqua><player></aqua>
+    到您的位置!
 Error:
-  noPermission: <prefix> <gray>You do not have permission to use this command!
-  noPermissionSign: <prefix> <gray>You do not have permission to make this sign!
-  featureDisabled: <prefix> <gray>This feature has been disabled!
-  noRequests: <prefix> <gray>You don't have any pending requests!
-  tpOff: <prefix> <aqua><player> <gray>has their teleportation disabled!
-  tpBlock: <prefix> <aqua><player> <gray>has blocked you from sending requests to
-    them!
-  alreadyOn: <prefix> <gray>Your teleport requests are already enabled!
-  alreadyOff: <prefix> <gray>Your teleport requests are already disabled!
-  alreadyBlocked: <prefix> <gray>This player is already blocked!
-  neverBlocked: <prefix> <gray>This player was never blocked!
-  onCooldown: <prefix> <gray>Please wait another <aqua><time></aqua> seconds to use
-    this command!
-  requestSentToSelf: <prefix> <gray>You can't send a request to yourself!
-  noSuchPlayer: <prefix> <gray>The player is either currently offline or doesn't exist!
-  alreadySentRequest: <prefix> <gray>You've already sent a request to <aqua><player></aqua>!
+  noPermission: <prefix> <gray>您无权使用此命令!
+  noPermissionSign: <prefix> <gray>您无权制作此标志!
+  featureDisabled: <prefix> <gray>此功能已被禁用!
+  noRequests: <prefix> <gray>您没有任何待处理的请求!
+  tpOff: <prefix> <aqua><player> <gray>禁用了他们的传送!
+  tpBlock: <prefix> <aqua><player> <gray>已屏蔽您向他们发送请求!
+  alreadyOn: <prefix> <gray>您的传送请求已启用!
+  alreadyOff: <prefix> <gray>您的传送请求已被禁用!
+  alreadyBlocked: <prefix> <gray>此玩家已被屏蔽!
+  neverBlocked: <prefix> <gray>这个玩家从来没有被屏蔽过!
+  onCooldown: <prefix> <gray>请再等 <aqua><time></aqua> 秒再使用此命令!
+  requestSentToSelf: <prefix> <gray>您无法向自己发送请求!
+  noSuchPlayer: <prefix> <gray>玩家当前处于离线状态或不存在!
+  alreadySentRequest: <prefix> <gray>您已发送请求向 <aqua><player></aqua>!
   notEnoughEXP: |-
-    <prefix> <gray>You do not have enough EXP Levels to teleport there!
-        <prefix> <gray>You need at least <aqua><levels></aqua>EXP levels!
+    <prefix> <gray>你没有足够的经验值等级来传送到那里!
+        <prefix> <gray>你至少需要 <aqua><levels></aqua>经验值等级!
   notEnoughEXPPoints: |-
-    <prefix> <gray>You do not have enough EXP Points to teleport there!
-        <prefix> <gray>You need at least <aqua><points></aqua>EXP points!
+    <prefix> <gray>你没有足够的经验值来传送到那里!
+        <prefix> <gray>你至少需要 <aqua><points></aqua>经验值!
   notEnoughMoney: |-
-    <prefix> <gray>You do not have enough money to teleport there!
-        <prefix> <gray>You need at least <aqua>amount</aqua>!
-  requestExpired: <prefix> <gray>Your teleport request to <aqua><player></aqua> has
-    expired!
-  noPlayerInput: <prefix> <gray>You must include a player name!
-  blockSelf: <prefix> <gray>You can't block yourself!
-  noRequestsFromPlayer: <prefix> <gray>You don't have any pending requests from <aqua><player></aqua>!
-  invalidPageNo: <prefix> <gray>You've inserted an invalid page number!
-  noHomeInput: <prefix> <gray>You have to include a home name!
-  noSuchHome: <prefix> <gray>This home doesn't exist!
-  noBedHome: <prefix> <gray>You don't have any bed spawn set!
-  noBedHomeOther: <prefix> <aqua><player></aqua> <gray>doesn't have a bed spawn set!
-  reachedHomeLimit: <prefix> <gray>You can't set any more homes!
-  homeAlreadySet: <prefix> <gray>You already have a home called <aqua><home></aqua>!
-  noWarpInput: <prefix> <gray>You have to include the warp's name!
-  noSuchWarp: <prefix> <gray>That warp doesn't exist!
-  warpAlreadySet: <prefix> <gray>There is already a warp called <aqua><warp></aqua>!
-  noSuchWorld: <prefix> <gray>That world doesn't exist!
-  noLocation: <prefix> <gray>You don't have any location to teleport back to!
-  notAPlayer: <prefix> <gray>You must be a player to run this command!
-  noHomes: <prefix> <gray>You haven't got any homes!
-  noHomesOther: <prefix> <aqua><player></aqua> <gray>hasn't got any homes!
-  tooFarAway: <prefix> <gray>The teleport destination is too far away so you can not
-    teleport there!
-  noRequestsSent: <prefix> <gray>Couldn't send a request to anyone :(
-  onCountdown: <prefix> <gray>You can't use this command whilst waiting to teleport!
-  noPermissionWarp: <prefix> <gray>You can't warp to <aqua><warp></aqua>!
-  cantTPToWorld: <prefix> <gray>You can't randomly teleport in that world!
-  cantTPToWorldLim: <prefix> <gray>You can't teleport to <aqua><world></aqua>!
-  tooFewArguments: <prefix> <gray>Too few arguments!
-  invalidArgs: <prefix> <gray>Invalid arguments!
-  cantTPToPlayer: <prefix> <gray>You can't request a teleportation to <aqua><player></aqua>!
-  noWarps: <prefix> <gray>There are no warps as of currently!
-  noAccessHome: <prefix> <gray>You cannot access <aqua><home></aqua> as of currently!
-  moveHomeFail: <prefix> <gray>The home has been moved but the data has not been stored
-    successfully. The plugin will try to fix this itself.
-  setMainHomeFail: <prefix> <gray>The main home has been set but the data has not
-    been stored successfully. The plugin will try to fix this itself.
-  deleteHomeFail: <prefix> <gray>The home has been deleted but the data has not been
-    stored successfully. The plugin will try to fix this itself.
-  setHomeFail: <prefix> <gray>The home has been set but the data has not been stored
-    successfully. The plugin will try to fix this itself.
-  deleteWarpFail: <prefix> <gray>The warp has been set but the data has not been stored
-    successfully. The plugin will try to fix this itself.
-  purgeWarpsFail: <prefix> <gray>Could not purge warps. Please check the console for
-    more information.
-  purgeHomesFail: <prefix> <gray>Could not purge homes. Please check the console for
-    more information.
-  homesNotLoaded: <prefix> <gray>Homes for this player haven't loaded yet, please
-    wait a little bit (even just a second) before trying this again!
-  noOfflineLocation: <prefix> <gray>No offline location was found for <aqua><player></aqua>!
-  failedOfflineTeleport: <prefix> <gray>Failed to teleport to offline player <aqua><player></aqua>!
-  failedOfflineTeleportHere: <prefix> <gray>Failed to teleport offline player <aqua><player></aqua>
-    to your location!
-  alreadySearching: <prefix> <gray>Already searching for a location to teleport to!
-  mirrorSpawnNoArguments: <prefix> <gray>No worlds/spawn points have been specified!
-  mirrorSpawnLackOfArguments: <prefix> <gray>You must be a player to only specify
-    one world - please specify a world and a spawnpoint to mirror players to!
-  noSuchSpawn: <prefix> <gray>There is no such spawn called <aqua><spawn></aqua>!
-  cannotSetMainSpawn: <prefix> <gray>You can only make existing spawnpoints into the
-    main spawnpoint rather than create new ones!
-  cannotSetMainSpawnConsole: <prefix> <gray>You can only make existing spawnpoints
-    into the main spawnpoint rather than create new ones since you are not a player!
-  nonAlphanumericSpawn: <prefix> <gray>Spawnpoints need to be alphanumeric!
-  removeSpawnNoArgs: <prefix> <gray>You have to specify a spawnpoint to remove!
-  noSuchPlugin: <prefix> <gray>This plugin is not supported for importing/exporting
-    yet!
-  cantImport: <prefix> <gray>Can't import plugin data from <aqua><plugin></aqua> (make
-    sure it's enabled and by the correct authors)!
-  cantExport: <prefix> <gray>Can't export plugin data from <aqua><plugin></aqua> (make
-    sure it's enabled and by the correct authors)!
-  noPluginSpecified: <prefix> <gray>You need to specify a plugin to import/export
-    from!
-  invalidOption: <prefix> <gray>That is not a valid option to import/export!
+    <prefix> <gray>你没有足够的钱传送到那里!
+        <prefix> <gray>你至少需要 <aqua>amount</aqua>!
+  requestExpired: <prefix> <gray>您的传送请求 <aqua><player></aqua> 已过期!
+  noPlayerInput: <prefix> <gray>您必须包含玩家名称!
+  blockSelf: <prefix> <gray>你不能屏蔽自己!
+  noRequestsFromPlayer: <prefix> <gray>您没有任何待处理的请求从 <aqua><player></aqua>!
+  invalidPageNo: <prefix> <gray>您插入的页码无效!
+  noHomeInput: <prefix> <gray>您必须输入一个家的名称!
+  noSuchHome: <prefix> <gray>这个家不存在!
+  noBedHome: <prefix> <gray>你没有任何床重生点!
+  noBedHomeOther: <prefix> <aqua><player></aqua> <gray>没有任何床重生点!
+  reachedHomeLimit: <prefix> <gray>您不能再设置任何家!
+  homeAlreadySet: <prefix> <gray>你已经有了一个家叫做 <aqua><home></aqua>!
+  noWarpInput: <prefix> <gray>您必须输入传送点的名称!
+  noSuchWarp: <prefix> <gray>那个传送点是不存在的!
+  warpAlreadySet: <prefix> <gray>已经有一个传送点叫做 <aqua><warp></aqua>!
+  noSuchWorld: <prefix> <gray>那个世界并不存在!
+  noLocation: <prefix> <gray>你没有任何位置可以传送回去!
+  notAPlayer: <prefix> <gray>您必须是玩家才能运行此命令!
+  noHomes: <prefix> <gray>你没有家!
+  noHomesOther: <prefix> <aqua><player></aqua> <gray>没有家!
+  tooFarAway: <prefix> <gray>传送目的地太远了，所以你不能传送到那里!
+  noRequestsSent: <prefix> <gray>无法向任何人发送请求 :(
+  onCountdown: <prefix> <gray>在等待传送时，您不能使用此命令!
+  noPermissionWarp: <prefix> <gray>你不能传送到 <aqua><warp></aqua>!
+  cantTPToWorld: <prefix> <gray>你不能在那个世界里随机传送!
+  cantTPToWorldLim: <prefix> <gray>你不能传送到 <aqua><world></aqua>!
+  tooFewArguments: <prefix> <gray>参数太少!
+  invalidArgs: <prefix> <gray>参数无效!
+  cantTPToPlayer: <prefix> <gray>你不能请求传送到 <aqua><player></aqua>!
+  noWarps: <prefix> <gray>截至目前，没有传送点!
+  noAccessHome: <prefix> <gray>您无法访问 <aqua><home></aqua> 截至目前!
+  moveHomeFail: <prefix> <gray>家已移动，但数据未成功存储.插件将尝试自行修复此问题.
+  setMainHomeFail: <prefix> <gray>默认的家已设置，但数据未成功存储.插件将尝试自行修复此问题.
+  deleteHomeFail: <prefix> <gray>家已被删除，但数据尚未成功存储.插件将尝试自行修复此问题.
+  setHomeFail: <prefix> <gray>家已设置，但数据未成功存储.插件将尝试自行修复此问题.
+  deleteWarpFail: <prefix> <gray>传送点已设置，但数据未成功存储.插件将尝试自行修复此问题.
+  purgeWarpsFail: <prefix> <gray>无法清除传送点.请查看控制台以获取更多信息.
+  purgeHomesFail: <prefix> <gray>无法清除家.请查看控制台以获取更多信息.
+  homesNotLoaded: <prefix> <gray>此玩家的家尚未加载，请稍等片刻（即使只是一秒钟），然后再尝试一次!
+  noOfflineLocation: <prefix> <gray>未找到该玩家的离线位置 <aqua><player></aqua>!
+  failedOfflineTeleport: <prefix> <gray>无法传送到离线玩家 <aqua><player></aqua>!
+  failedOfflineTeleportHere: <prefix> <gray>无法传送离线玩家 <aqua><player></aqua>
+    到您的位置!
+  alreadySearching: <prefix> <gray>已经在寻找要传送到的位置!
+  mirrorSpawnNoArguments: <prefix> <gray>未指定世界/重生点!
+  mirrorSpawnLackOfArguments: <prefix> <gray>您必须是玩家才能指定一个世界 - 请指定一个世界和一个出重生以将玩家重定向到!
+  noSuchSpawn: <prefix> <gray>没有重生点叫 <aqua><spawn></aqua>!
+  cannotSetMainSpawn: <prefix> <gray>您只能将现有重生点设置为主重生点，而不能创建新的重生点!
+  cannotSetMainSpawnConsole: <prefix> <gray>由于您不是玩家，因此您只能将现有的重生点设为主重生点，而不能创建新的重生点!
+  nonAlphanumericSpawn: <prefix> <gray>重生点必须为字母数字!
+  removeSpawnNoArgs: <prefix> <gray>您必须指定要删除的重生点!
+  noSuchPlugin: <prefix> <gray>此插件尚不支持导入/导出!
+  cantImport: <prefix> <gray>无法从<aqua><plugin></aqua>中导入插件数据（确保它已启用并由正确的作者提供）!
+  cantExport: <prefix> <gray>无法从<aqua><plugin></aqua>中导出插件数据（确保它已启用并由正确的作者启用)!
+  noPluginSpecified: <prefix> <gray>您需要指定要从中导入/导出的插件!
+  invalidOption: <prefix> <gray>这不是导入/导出的有效选项!
   notEnoughItems: |-
-    <prefix> <gray>You do not have enough items to teleport there!
-        <prefix> <gray>You need at least <aqua><amount></aqua> <type>(s)!
-  mirrorSpawnFail: <prefix> <gray>Failed to mirror <aqua><from></aqua>'s spawnpoint
-    to <aqua><spawn></aqua>!
-  removeSpawnFail: <prefix> <gray>Failed to remove the spawnpoint <aqua><spawn></aqua>!
-  setMainSpawnFail: <prefix> <gray>Failed to set the main spawnpoint <aqua><spawn></aqua>!
+    <prefix> <gray>你没有足够的物品可以传送到那里!
+        <prefix> <gray>你至少需要 <aqua><amount></aqua> <type>(s)!
+  mirrorSpawnFail: <prefix> <gray>重定向失败 <aqua><from></aqua>的重生点 <aqua><spawn></aqua>!
+  removeSpawnFail: <prefix> <gray>无法移除重生点 <aqua><spawn></aqua>!
+  setMainSpawnFail: <prefix> <gray>无法设置主重生点 <aqua><spawn></aqua>!
   blockFail: <prefix> <gray>Failed to save the block against <aqua><player></aqua>!
   unblockFail: <prefix> <gray>Failed to save the block removal against <aqua><player></aqua>!
-  noParticlePlugins: <prefix> <gray>There are no particle plugins on this server!
-    You need at least one (PlayerParticles) to use this command.
-  notEnoughArgs: <prefix> <gray>You haven't specified enough arguments to run this
-    command!
-  failedMapIconUpdate: <prefix> <gray>Failed to update the map icon! Please check
-    the console for more information.
-  setWarpFail: <prefix> <gray>Failed to set the warp <warp>!
-  teleportFailed: <prefix> <gray>Sorry, we couldn't teleport you :(
-  randomLocFailed: <prefix> <gray>Sorry, we couldn't find a location to teleport you
-    to :(
+  noParticlePlugins: <prefix> <gray>此服务器上没有粒子插件! 您至少需要一个 (玩家粒子PlayerParticles) 来使用此命令.
+  notEnoughArgs: <prefix> <gray>您尚未指定足够的参数来运行此命令!
+  failedMapIconUpdate: <prefix> <gray>无法更新地图图标！请查看控制台以获取更多信息.
+  setWarpFail: <prefix> <gray>无法设置传送点 <warp>!
+  teleportFailed: <prefix> <gray>对不起，我们无法传送您 :(
+  randomLocFailed: <prefix> <gray>很抱歉，我们无法找到将您传送到的位置 :(
   notEnoughGeneral: |2
-        <prefix> <gray>You cannot afford to teleport there!
-        <prefix> <gray>You need <aqua><cost></aqua>!
-  worldUnloaded: <prefix> <gray>Sorry, the destination world either doesn't exist
-    or isn't loaded. Please tell a server admin!
+        <prefix> <gray>你负担不起传送到那里!
+        <prefix> <gray>你需要 <aqua><cost></aqua>!
+  worldUnloaded: <prefix> <gray>对不起，目标世界不存在或未加载.请告诉服务器管理员!
 Info:
-  tpOff: <prefix> <gray>Successfully disabled teleport requests!
-  tpOn: <prefix> <gray>Successfully enabled teleport requests!
-  tpAdminOff: <prefix> <gray>Successfully disabled teleport requests for <aqua><player></aqua>!
-  tpAdminOn: <prefix> <gray>Successfully enabled teleport requests for <aqua><player></aqua>!
+  tpOff: <prefix> <gray>成功禁用传送请求!
+  tpOn: <prefix> <gray>成功启用传送请求!
+  tpAdminOff: <prefix> <gray>成功禁用传送请求对 <aqua><player></aqua>!
+  tpAdminOn: <prefix> <gray>成功启用传送请求对 <aqua><player></aqua>!
   requestSent: |2
-        <prefix> <gray>Successfully sent request to <aqua><player></aqua>!
-        <prefix> <gray>They've got <aqua><lifetime></aqua> to respond!
-        <prefix> <gray>To cancel the request use <aqua>/tpcancel</aqua> to cancel it.
+        <prefix> <gray>已成功将请求发送到 <aqua><player></aqua>!
+        <prefix> <gray>他们有 <aqua><lifetime></aqua> 做出回应!
+        <prefix> <gray>要取消请求，请使用 <aqua>/tpcancel</aqua> 取消它.
 
-                            <click:run_command:'tpcancel <player>'><hover:show_text:'<red>Click here to cancel the request.'><gray><bold>[CANCEL]</hover></click>
+                            <click:run_command:'tpcancel <player>'><hover:show_text:'<red>点击这里取消请求.'><gray><bold>[取消]</hover></click>
   tpaRequestReceived: |2
-        <prefix> <gray>The player <aqua><player></aqua> wants to teleport to you!
-        <prefix> <gray>If you want to accept it, use <aqua>/tpayes</aqua>, but if not, use <aqua>/tpano</aqua>.
-        <prefix> <gray>You've got <aqua><lifetime></aqua> to respond to it!
+        <prefix> <gray>玩家 <aqua><player></aqua> 想传送到你身边!
+        <prefix> <gray>如果您想接受它，请使用 <aqua>/tpayes</aqua>, 但如果不，请使用 <aqua>/tpano</aqua>.
+        <prefix> <gray>你有 <aqua><lifetime></aqua> 来回应它!
 
-                            <click:run_command:'tpayes <player>'><hover:show_text:'<green>Click here to accept the request.'><green><bold>[ACCEPT]</hover></click>             <click:run_command:/tpano <player>><hover:show_text:'<red>Click here to deny the request.><red><bold>[DENY]</red></bold></hover></click>
+                            <click:run_command:'tpayes <player>'><hover:show_text:'<green>点击这里接受请求.'><green><bold>[接受]</hover></click>             <click:run_command:/tpano <player>><hover:show_text:'<red>单击此处拒绝请求.><red><bold>[拒绝]</red></bold></hover></click>
   tpaRequestHere: |2
-        <prefix> <gray>The player <aqua><player></aqua> wants to teleport you to them!
-        <prefix> <gray>If you want to accept it, use <aqua>/tpayes</aqua>, but if not, use <aqua>/tpano</aqua>.
-        <prefix> <gray>You've got <aqua><lifetime> seconds</aqua> to respond to it!
+        <prefix> <gray>玩家 <aqua><player></aqua> 想把你传送到他们那里!
+        <prefix> <gray>如果您想接受它，请使用 <aqua>/tpayes</aqua>, 但如果不，请使用 <aqua>/tpano</aqua>.
+        <prefix> <gray>你有 <aqua><lifetime> 秒</aqua> 来回应它!
 
-                          <click:run_command:'/tpayes <player>'><hover:show_text:'<green>Click here to accept the request.'><green><bold>[ACCEPT]</bold></hover></click>             <click:run_command:/tpano <player>><hover:show_text:'<red>Click here to deny the request.><red><bold>[DENY]</red></bold></hover></click>
-  blockPlayer: <prefix> <aqua><player> <gray>has been blocked.
-  tpCancel: <prefix> <gray>You have cancelled your teleport request.
-  tpCancelResponder: <prefix> <aqua><player> <gray>has cancelled their teleport request.
-  multipleRequestsCancel: '<prefix> <gray>You have multiple teleport requests pending!
-    Click one of the following to cancel:'
+                          <click:run_command:'/tpayes <player>'><hover:show_text:'<green>点击这里接受请求.'><green><bold>[接受]</bold></hover></click>             <click:run_command:/tpano <player>><hover:show_text:'<red>单击此处拒绝请求.><red><bold>[拒绝]</red></bold></hover></click>
+  blockPlayer: <prefix> <aqua><player> <gray>已被屏蔽.
+  tpCancel: <prefix> <gray>您已取消传送请求.
+  tpCancelResponder: <prefix> <aqua><player> <gray>已取消他们的传送请求.
+  multipleRequestsCancel: '<prefix> <gray>您有多个传送请求待处理!
+    单击以下选项之一以取消:'
   multipleRequestsIndex: <prefix> <click:run_command:<command> <player>><player></click>
-  multipleRequestsList: <prefix> <gray>Do /tpalist <Page Number> To check other requests.
-  multipleRequestAccept: '<prefix> <gray>You have multiple teleport requests pending!
-    Click one of the following to accept:'
-  multipleRequestDeny: '<prefix> <gray>You have multiple teleport requests pending!
-    Click one of the following to deny:'
-  requestDeclined: <prefix> <gray>You've declined the teleport request!
-  requestDeclinedResponder: <prefix> <aqua><player></aqua> has declined your teleport
-    request!
-  requestDisplaced: <prefix> <gray>Your request has been cancelled because <aqua><player></aqua>
-    got another request!
-  deletedHome: <prefix> <gray>Successfully deleted the home <aqua><home></aqua>!
-  deletedHomeOther: <prefix> <gray>Successfully deleted the home <aqua><home></aqua>
-    for <aqua><player></aqua>!
-  setHome: <prefix> <gray>Successfully set the home <aqua><home></aqua>!
-  setHomeOther: <prefix> <gray>Successfully set the home <aqua><home></aqua> for <aqua><player></aqua>!
-  setSpawn: <prefix> <gray>Successfully set the spawnpoint!
-  setWarp: <prefix> <gray>Successfully set the warp <aqua><warp></aqua>!
-  deletedWarp: <prefix> <gray>Successfully deleted the warp <aqua><warp></aqua>!
-  purgeWarpsWorld: <prefix> <gray>Successfully purged warps in <aqua><world></aqua>!
-  purgeWarpsCreator: <prefix> <gray>Successfully purged warps created by <aqua><player></aqua>!
-  purgeHomesWorld: <prefix> <gray>Successfully purged homes in <aqua><world></aqua>!
-  purgeHomesCreator: <prefix> <gray>Successfully purged homes created for <aqua><player></aqua>!
-  searching: <prefix> <gray>Searching for a location...
-  unblockPlayer: <prefix> <gray>Successfully unblocked <aqua><player></aqua>!
-  reloadingConfig: <prefix> <gray>Reloading <aqua>AdvancedTeleport</aqua>'s config...
-  reloadedConfig: <prefix> <gray>Finished reloading the config!
-  warps: <aqua><bold>Warps <dark_gray>» <reset>
-  homes: <aqua><bold>Homes <dark_gray>» <reset>
-  homesOther: <aqua><bold><player>'s homes <dark_gray>» <reset>
-  requestAccepted: <prefix> <gray>You've accepted the teleport request!
-  requestAcceptedResponder: <prefix> <aqua><player></aqua> has accepted the teleport
-    request!
-  paymentVault: <prefix> <gray>You have paid <aqua><amount></aqua> and now have <aqua><balance></aqua>!
-  paymentEXP: <prefix> <gray>You have paid <aqua><amount> EXP Levels</aqua>and now
-    have <aqua><levels></aqua>levels!
-  paymentPoints: <prefix> <gray>You have paid <aqua><amount> EXP Points</aqua>and
-    now have <aqua><points></aqua>points!
-  createdWarpSign: <prefix> <gray>Successfully created the warp sign!
-  createdRTPSign: <prefix> <gray>Successfully created the RandomTP sign!
-  createdSpawnSign: <prefix> <gray>Successfully created the spawn sign!
-  tpallRequestSent: <prefix> <gray>Successfully sent a teleport request to <aqua><amount></aqua>player(s)!
-  teleportedToLoc: '<prefix> <gray>Successfully teleported you to <aqua><x></aqua>,
+  multipleRequestsList: <prefix> <gray>使用 /tpalist <Page Number> 检查其他请求.
+  multipleRequestAccept: '<prefix> <gray>您有多个传送请求待处理!
+    单击以下选项之一以接受:'
+  multipleRequestDeny: '<prefix> <gray>您有多个传送请求待处理!
+    单击以下选项之一以拒绝:'
+  requestDeclined: <prefix> <gray>您拒绝了传送请求!
+  requestDeclinedResponder: <prefix> <aqua><player></aqua> 拒绝了你的传送
+    请求!
+  requestDisplaced: <prefix> <gray>您的请求已被取消，因为 <aqua><player></aqua>
+    有另一个请求!
+  deletedHome: <prefix> <gray>已成功删除家 <aqua><home></aqua>!
+  deletedHomeOther: <prefix> <gray>已成功删除家 <aqua><home></aqua>
+    对 <aqua><player></aqua>!
+  setHome: <prefix> <gray>成功设置家 <aqua><home></aqua>!
+  setHomeOther: <prefix> <gray>成功设置家 <aqua><home></aqua> 对 <aqua><player></aqua>!
+  setSpawn: <prefix> <gray>成功设置重生点!
+  setWarp: <prefix> <gray>成功设置传送点 <aqua><warp></aqua>!
+  deletedWarp: <prefix> <gray>已成功删除传送点 <aqua><warp></aqua>!
+  purgeWarpsWorld: <prefix> <gray>成功清除了传送点在 <aqua><world></aqua>!
+  purgeWarpsCreator: <prefix> <gray>成功清除了传送点由 <aqua><player></aqua>!
+  purgeHomesWorld: <prefix> <gray>成功清除了家 <aqua><world></aqua>!
+  purgeHomesCreator: <prefix> <gray>成功清除了家，创建为了 <aqua><player></aqua>!
+  searching: <prefix> <gray>搜索位置...
+  unblockPlayer: <prefix> <gray>成功解除屏蔽 <aqua><player></aqua>!
+  reloadingConfig: <prefix> <gray>重新加载 <aqua>AdvancedTeleport</aqua>的配置文件...
+  reloadedConfig: <prefix> <gray>完成重新加载配置!
+  warps: <aqua><bold>传送点 <dark_gray>» <reset>
+  homes: <aqua><bold>家 <dark_gray>» <reset>
+  homesOther: <aqua><bold><player>的家 <dark_gray>» <reset>
+  requestAccepted: <prefix> <gray>您已接受传送请求!
+  requestAcceptedResponder: <prefix> <aqua><player></aqua> 已接受传送
+    请求!
+  paymentVault: <prefix> <gray>您已付款 <aqua><amount></aqua> 现在有 <aqua><balance></aqua>!
+  paymentEXP: <prefix> <gray>您已付款 <aqua><amount> 经验值等级</aqua>现在
+    有 <aqua><levels></aqua>级!
+  paymentPoints: <prefix> <gray>您已付款 <aqua><amount> 经验值</aqua>
+    现在有 <aqua><points></aqua>点!
+  createdWarpSign: <prefix> <gray>已成功创建传送点标志!
+  createdRTPSign: <prefix> <gray>已成功创建随机传送标志!
+  createdSpawnSign: <prefix> <gray>已成功创建重生点标志!
+  tpallRequestSent: <prefix> <gray>已成功发送传送请求向 <aqua><amount></aqua>玩家！
+  teleportedToLoc: '<prefix> <gray>成功将您传送到 <aqua><x></aqua>,
     <aqua><y></aqua>, <aqua><z></aqua>! (Yaw: <aqua><yaw></aqua>, Pitch: <aqua><pitch></aqua>,
     World: <aqua><world></aqua>)'
-  teleportedToLocOther: '<prefix> <gray>Successfully teleported <aqua><player></aqua>to
+  teleportedToLocOther: '<prefix> <gray>成功传送 <aqua><player></aqua>到
     <aqua><x></aqua>, <aqua><y></aqua>, <aqua><z></aqua>! (Yaw: <aqua><yaw></aqua>,
     Pitch: <aqua><pitch></aqua>, World: <aqua><world></aqua>)'
-  movedWarp: <prefix> <gray>Moved <aqua><warp></aqua>to your current location!
-  movedHome: <prefix> <gray>Moved home <aqua><home></aqua>to your current location!
-  movedHomeOther: <prefix> <gray>Moved <aqua><player>'s </aqua> home <aqua><home></aqua>to
-    your location!
-  setMainHome: <prefix> <gray>Made <aqua><home></aqua>your main home!
-  setAndMadeMainHome: <prefix> <gray>Set <aqua><home></aqua>at your current location
-    and made it your main home!
-  setMainHomeOther: <prefix> <gray>Made <aqua><home> <player></aqua>'s main home!
-  setAndMadeMainHomeOther: <prefix> <gray>Set <aqua><home></aqua>for <aqua><player></aqua>at
-    your current location and made it their main home!
-  mirroredSpawn: <prefix> <gray>Mirrored <aqua><from></aqua>'s spawnpoint to <aqua><spawn></aqua>!
-  setMainSpawn: <prefix> <gray>Set the main spawnpoint to <aqua><spawn></aqua>! All
-    players will teleport there if there are no overriding spawns/permissions.
-  removedSpawn: <prefix> <gray>Removed the spawnpoint <aqua><spawn></aqua>!
-  setSpawnSpecial: <prefix> <gray>Set spawnpoint <aqua><spawn></aqua>!
-  importStarted: <prefix> <gray>Starting import from <aqua><plugin></aqua>...
-  importFinished: <prefix> <gray>Finished import from <aqua><plugin></aqua>!
-  exportStarted: <prefix> <gray>Starting export to <aqua><plugin></aqua>...
-  exportFinished: <prefix> <gray>Finished export to <aqua><plugin></aqua>!
-  paymentItems: <prefix> <gray>You have paid <aqua><amount> <type>(s)</aqua> for that
-    teleport!
+  movedWarp: <prefix> <gray>移动 <aqua><warp></aqua>到您当前的位置!
+  movedHome: <prefix> <gray>移动家 <aqua><home></aqua>到您当前的位置!
+  movedHomeOther: <prefix> <gray>移动 <aqua><player>的 </aqua> 家 <aqua><home></aqua>到您当前的位置!
+  setMainHome: <prefix> <gray>设置 <aqua><home></aqua>为你的默认家!
+  setAndMadeMainHome: <prefix> <gray>设置 <aqua><home></aqua>在您当前的位置
+    并把它作为你的默认家!
+  setMainHomeOther: <prefix> <gray>设置 <aqua><home> <player></aqua>的默认家!
+  setAndMadeMainHomeOther: <prefix> <gray>设置 <aqua><home></aqua>对 <aqua><player></aqua>在
+    您当前的位置，并将其作为他们的默认家!
+  mirroredSpawn: <prefix> <gray>重定向 <aqua><from></aqua>的重生点到 <aqua><spawn></aqua>!
+  setMainSpawn: <prefix> <gray>将主重生点设置为 <aqua><spawn></aqua>! 如果没有覆盖的重生点/权限，所有玩家都会传送到那里.
+  removedSpawn: <prefix> <gray>删除了重生点 <aqua><spawn></aqua>!
+  setSpawnSpecial: <prefix> <gray>设置重生点 <aqua><spawn></aqua>!
+  importStarted: <prefix> <gray>开始导入从 <aqua><plugin></aqua>...
+  importFinished: <prefix> <gray>完成导入自 <aqua><plugin></aqua>!
+  exportStarted: <prefix> <gray>开始导出到 <aqua><plugin></aqua>...
+  exportFinished: <prefix> <gray>完成导出至 <aqua><plugin></aqua>!
+  paymentItems: <prefix> <gray>您已付款 <aqua><amount> <type>(s)</aqua> 为此
+    传送!
   updateInfo: |-
-    <prefix> <hover:show_text:'<aqua>Current Version <dark_gray>» <gray><version>
-    <aqua>New Version <dark_gray>» <gray><new-version>
-    <aqua>Title <dark_gray>» <gray><title>'><click:open_url:'https://www.spigotmc.org/resources/advancedteleport.64139/'><gray>AdvancedTeleport has an update available! Click/hover over this text for more information.</click></hover>
-  defaultParticlesUpdated: <prefix> <gray>The default waiting particles have been
-    set to your current particle setup!
-  specificParticlesUpdated: <prefix> <gray>The waiting particles settings for <aqua><type></aqua>have
-    been set to your current particle setup!
-  mapIconUpdateClickTooltip: <prefix> <gray>Updated click tooltip for <type> <aqua><name></aqua>!
-    The map should update shortly.
-  mapIconUpdateHoverTooltip: <prefix> <gray>Updated hover tooltip for <type> <aqua><name></aqua>!
-    The map should update shortly.
-  mapIconUpdateIcon: <prefix> <gray>Updated the icon for <type> <aqua><name></aqua>!
-    The map should update shortly.
-  mapIconUpdateSize: <prefix> <gray>Updated the icon size for <type> <aqua><name></aqua>!
-    The map should update shortly.
-  mapIconUpdateVisibility: <prefix> <gray>Updated the icon visibility for <type> <aqua><name></aqua>!
-    The map should update shortly.
-  mirrorSpawnSame: <prefix> <gray>The spawns for <aqua><from></aqua> and <aqua><spawn></aqua>
-    already to go the same place! Don't worry :)
+    <prefix> <hover:show_text:'<aqua>当前版本 <dark_gray>» <gray><version>
+    <aqua>新版本 <dark_gray>» <gray><new-version>
+    <aqua>标题 <dark_gray>» <gray><title>'><click:open_url:'https://www.spigotmc.org/resources/advancedteleport.64139/'><gray>AdvancedTeleport 有可用的更新！单击/将鼠标悬停在此文本上以获取更多信息.</click></hover>
+  defaultParticlesUpdated: <prefix> <gray>默认等待粒子已设置为您当前的粒子设置！
+  specificParticlesUpdated: <prefix> <gray>等待粒子的设置 <aqua><type></aqua>
+    已设置为当前粒子设置!
+  mapIconUpdateClickTooltip: <prefix> <gray>更新了点击工具提示为 <type> <aqua><name></aqua>!
+    地图应该很快就会更新.
+  mapIconUpdateHoverTooltip: <prefix> <gray>更新了悬停工具提示为 <type> <aqua><name></aqua>!
+    地图应该很快就会更新.
+  mapIconUpdateIcon: <prefix> <gray>更新了图标为 <type> <aqua><name></aqua>!
+    地图应该很快就会更新.
+  mapIconUpdateSize: <prefix> <gray>更新了图标大小为 <type> <aqua><name></aqua>!
+    地图应该很快就会更新.
+  mapIconUpdateVisibility: <prefix> <gray>更新了图标可见性为 <type> <aqua><name></aqua>!
+    地图应该很快就会更新.
+  mirrorSpawnSame: <prefix> <gray>重生点对 <aqua><from></aqua> 和 <aqua><spawn></aqua>
+    已经去同一个地方了! 不用担心 :)
 Tooltip:
-  homes: '<prefix> <gray>Teleports you to your home: <aqua><home>'
-  warps: '<prefix> <gray>Teleports you to warp: <aqua><warp>'
+  homes: '<prefix> <gray>将您传送到您的家: <aqua><home>'
+  warps: '<prefix> <gray>将你传送到传送点: <aqua><warp>'
   location: |2-
 
     <aqua>X <dark_gray>» <gray><x>
@@ -297,61 +269,57 @@ Tooltip:
     <aqua>World <dark_gray>» <gray><world>
 Descriptions:
   Subcommands:
-    help: Sends the help menu, providing a full list of commands.
-    info: Sends information regarding the plugin.
-    import: Imports data from another plugin so that it can be used within AT.
-    export: Exports data within AT to another plugin.
-    reload: Reloads the plugin's configuration.
-    clearcache: Clears the RTP cache.
+    help: 发送帮助菜单，提供完整的命令列表.
+    info: 发送有关插件的信息.
+    import: 从另一个插件导入数据，以便在 AT 中使用.
+    export: 将 AT 中的数据导出到另一个插件.
+    reload: 重新加载插件的配置.
+    clearcache: 清除 RTP 缓存.
     map:
-      setclicktooltip: Sets the tooltip of an AT icon in a map plugin when it is clicked
-        (excluding Dynmap).
-      sethovertooltip: Sets the tooltip of an AT icon in a map plugin when it is hovered
-        over.
-      seticon: Sets the image of an AT icon in a map plugin.
-      setsize: Sets the size of an AT icon in a map plugin (excluding Dynmap).
-      setvisible: Sets the visibility of an AT icon in a map plugin when it is clicked.
-  at: The core command for AT.
-  tpa: Sends a request to teleport to the player.
-  tpahere: Sends a request to the player to teleport to you.
-  tpyes: Accepts a player's teleport request.
-  tpno: Declines a player's teleport request.
-  tpcancel: Cancels your teleport request to a player.
-  toggletp: Either stops or allows players to send teleport requests to you.
-  tpon: Allows players to send teleport requests to you.
-  tpoff: Stops players from sending teleport requests to you.
-  tpblock: Stops a specific player from sending teleport requests to you.
-  tpunblock: Allows a blocked player to send you teleport requests again.
-  back: Teleports you to your previous location.
-  tpalist: Lists all of your current teleport requests.
-  tpo: Instantly teleports you to a player.
-  tpohere: Instantly teleports a player to you.
-  tpall: Sends a teleport request to everyone in the server to you.
-  tploc: Teleports you to a specific location.
-  tpoffline: Teleports you to an offline player.
-  tpofflinehere: Teleports an offline player to you.
-  tpr: Teleports you to a random location.
-  warp: Teleports you to a given warp point.
-  warps: Gives you a list of warps you can teleport to.
-  setwarp: Sets a warp at your location.
-  delwarp: Deletes a warp.
-  movewarp: Moves a warp to a new location.
-  spawn: Teleports you to the spawnpoint.
-  setspawn: Sets a spawn with a name when specified.
-  mirrorspawn: Redirects people using /spawn in one world to another spawn point.
-  setmainspawn: Sets a specified spawnpoint to become the main spawnpoint. If it does
-    not exist, it will be created if you have /setspawn permissions.
-  removespawn: Removes a specified spawnpoint. If none is specified, the one in your
-    current world is removed.
-  home: Teleports you to your home.
-  homes: Gives you a list of homes you've set.
-  sethome: Sets a home at your current location.
-  delhome: Deletes a home.
-  movehome: Moves a home to a new location.
-  setmainhome: Sets a home at your location or makes an existing one your main home.
-  purge: Removes all warps or homes for the specified player or world.
-  particles: Ports your current particle selection to the default waiting particles
-    configuration, or a command one.
+      setclicktooltip: 在地图插件中设置 AT 图标在单击时的工具提示
+        (不包括 Dynmap).
+      sethovertooltip: 设置地图插件中 AT 图标将鼠标悬停在上面时的工具提示.
+      seticon: 在地图插件中设置 AT 图标的图像.
+      setsize: 设置地图插件中 AT 图标的大小 (不包括 Dynmap).
+      setvisible: 设置 AT 图标在地图插件中单击时的可见性.
+  at: AT 的核心命令.
+  tpa: 向玩家发送传送请求.
+  tpahere: 向玩家发送传送到您身边的请求.
+  tpyes: 接受玩家的传送请求.
+  tpno: 拒绝玩家的传送请求.
+  tpcancel: 取消对玩家的传送请求.
+  toggletp: 停止或允许玩家向您发送传送请求.
+  tpon: 允许玩家向你发送传送请求.
+  tpoff: 阻止玩家向您发送传送请求.
+  tpblock: 阻止特定玩家向您发送传送请求.
+  tpunblock: 允许被阻止的玩家再次向您发送传送请求.
+  back: 将您传送到之前的位置.
+  tpalist: 列出您当前的所有传送请求.
+  tpo: 立即将您传送到玩家身边.
+  tpohere: 立即将一名玩家传送到您身边.
+  tpall: 向服务器中的每个人发送传送请求.
+  tploc: 将您传送到特定位置.
+  tpoffline: 将您传送到离线玩家.
+  tpofflinehere: 将离线玩家传送到您身边.
+  tpr: 将你传送到一个随机的位置.
+  warp: 将你传送到一个给定的传送点.
+  warps: 给你一个可以传送到的传送点列表.
+  setwarp: 在您的位置设置传送点.
+  delwarp: 删除传送点.
+  movewarp: 将传送点移动到新位置.
+  spawn: 将你传送到出生点.
+  setspawn: 在指定时设置具有名称的重生点.
+  mirrorspawn: 将一个世界中使用 /spawn 的人重定向到另一个重生点.
+  setmainspawn: 将指定的重生点设置为主重生点.如果它不存在，则如果您具有 /setspawn 权限，则将创建它.
+  removespawn: 删除指定的重生点.如果未指定任何内容，则删除当前世界中的那个.
+  home: 将您传送到您的家中.
+  homes: 为您提供已设置的房屋列表.
+  sethome: 在当前位置设置家.
+  delhome: 删除家.
+  movehome: 将家搬到新位置.
+  setmainhome: 在您的位置设置一个家，或将现有家设为您的默认家.
+  purge: 移除指定玩家或世界的所有传送点或家.
+  particles: 将当前粒子选择移植到默认的等待粒子配置或命令配置.
 Usages:
   Subcommands:
     help: /at help [Category|Page]
@@ -414,43 +382,43 @@ Usages-Admin:
   setmainhome: /setmainhome <Home>|<Player> <Home>
   spawn: /spawn <ID>
 Forms:
-  tpahere-title: TPAHere Request
-  tpahere-description: Select a player to send a TPAHere request to.
-  tpa-title: TPA Request
-  tpa-description: Select a player to send a TPA request to.
-  tpa-received-title: TPA Request
-  tpa-received-description: The player <player> wants to teleport to you!
-  tpa-received-accept: Accept
-  tpa-received-deny: Deny
-  tpahere-received-title: TPAHere Request
-  tpahere-received-description: The player <player> wants you to teleport to them!
-  tpahere-received-accept: Accept
-  tpahere-received-deny: Deny
-  home-title: Homes
-  home-description: Select a home to teleport to.
-  sethome-title: Set Home
-  sethome-description: Enter a home name.
-  delhome-title: Delete Home
-  delhome-description: Select the home to delete.
-  setmainhome-title: Set Main Home
-  setmainhome-description: Enter an existing home name or a new one.
-  movehome-title: Move Home
-  movehome-description: Choose the home to be moved.
-  warp-title: Warps
-  warp-description: Select a warp to teleport to.
-  delwarp-title: Delete Warp
-  delwarp-description: Select a warp to delete.
-  setwarp-title: Set Warp
-  setwarp-description: Enter a warp name.
-  movewarp-title: Move Warp
-  movewarp-description: Select a warp to move.
+  tpahere-title: Taphere请求
+  tpahere-description: 选择要向其发送 TPAHere 请求的玩家.
+  tpa-title: TPA 请求
+  tpa-description: 选择要向其发送 TPA 请求的玩家.
+  tpa-received-title: TPA 请求
+  tpa-received-description: 玩家 <player> 想传送到你身边！
+  tpa-received-accept: 接受
+  tpa-received-deny: 拒绝
+  tpahere-received-title: Taphere请求
+  tpahere-received-description: 玩家 <player> 希望你传送到他们身边！
+  tpahere-received-accept: 接受
+  tpahere-received-deny: 拒绝
+  home-title: 家
+  home-description: 选择要传送到的家.
+  sethome-title: 设置家
+  sethome-description: 输入家的名称.
+  delhome-title: 删除家
+  delhome-description: 选择要删除的家.
+  setmainhome-title: 设置默认家
+  setmainhome-description: 输入现有家庭名称或新家庭名称.
+  movehome-title: 搬家
+  movehome-description: 选择要搬迁的房屋.
+  warp-title: 传送点
+  warp-description: 选择要传送到的传送点.
+  delwarp-title: 删除变形
+  delwarp-description: 选择要删除的变形.
+  setwarp-title: 设置传送点
+  setwarp-description: 输入变形名称.
+  movewarp-title: 移动传送点
+  movewarp-description: 选取要移动的变形.
   tpblock-title: Block Player
-  tpblock-description: Select a player to block.
-  tpunblock-title: Unblock Player
-  tpunblock-description: Select a player to unblock.
-  tpcancel-title: Cancel TP Request
-  tpcancel-description: Select a request to cancel.
-  tpo-title: Teleport
-  tpo-description: Select a player to teleport to.
-  tpohere-title: Teleport Here
-  tpohere-description: Select a player to teleport to your location.
+  tpblock-description: 选择要阻止的玩家.
+  tpunblock-title: 解锁玩家
+  tpunblock-description: 选择要取消阻止的玩家.
+  tpcancel-title: 取消 TP 请求
+  tpcancel-description: 选择要取消的请求.
+  tpo-title: 传送
+  tpo-description: 选择要传送到的玩家.
+  tpohere-title: 传送到这里
+  tpohere-description: 选择要传送到您所在位置的玩家.
