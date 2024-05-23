@@ -10,8 +10,7 @@ Common:
   prefixes:
   - <aqua>↑</aqua> <dark_gray>»</dark_gray>
 Teleport:
-  eventBeforeTP: <prefix> <gray>Teleporting in <aqua><countdown> seconds</aqua>, please
-    do not move!
+  eventBeforeTP: <prefix> <gray>传送将在 <aqua><countdown> 秒后进行</aqua>, 请不要移动!
   # This is an example use for titles and subtitles in the plugin.
   # This feature is supported only if you're on version 1.8.8 or newer.
   eventBeforeTP_title:

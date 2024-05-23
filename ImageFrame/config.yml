@@ -1,0 +1,144 @@
+Messages:
+  Reloaded: '&eImageFrame 已重新加载！'
+  ImageMapAlreadyCreating: '&cImageMap 已经在处理中，请稍候！'
+  ImageMapProcessing: '&eImageMap 正在处理中，请稍候！'
+  # Leave this empty ("") to disable action bar message
+  ImageMapProcessingActionBar: '&eImageMap &a{Name} &e正在处理中{Dots}'
+  ImageMapCreated: '&a图像映射已创建！'
+  ImageMapRefreshed: '&a图像映射已刷新！'
+  ImageMapDeleted: '&e图像映射已被删除！'
+  ImageMapRenamed: '&aImageMap 已重命名！'
+  ImageMapTogglePaused: '&a切换 ImageMap 播放暂停！'
+  ImageMapPlaybackJumpTo: '&a在 {Seconds} 秒时跳到位置！'
+  ImageMapPlayerPurge: '&e已清除 {CreatorName} ({CreatorUUID}) -[{ImageMapNames}] 拥有的 {Amount} 个 ImageMap'
+  SetCreator: '&aID {ImageID} 的 ImageMap 创建者设置为 {CreatorName} ({CreatorUUID})'
+  InvalidOverlayMap: '&c叠加仅适用于原版 Minecraft 地图，并且选择中没有重复项！'
+  UnableToLoadMap: '&cImageMap 无法加载，读取图像时出现问题。请联系服务器管理员以检查服务器控制台以获取更多信息。'
+  UnknownError: '&c发生未知错误。'
+  ImageOverMaxFileSize: '&c无法加载 ImageMap，因为它超过了允许的最大文件大小。 ({Size} 字节)'
+  NotAnImageMap: '&c这不是一个 ImageMap'
+  URLImageMapInfo:
+    - '&b图片编号: {ImageID}'
+    - '&a姓名: {Name}'
+    - '&e地图尺寸: {Width} x {Height}'
+    - '&d创作者: {CreatorName} ({CreatorUUID})'
+    - '&f使用权: {Access}'
+    - '&a创建时间: {TimeCreated}'
+    - '&b标记: {Markers}'
+    - '&eURL: {URL}'
+  NoPermission: '&c您没有权限这样做！'
+  NoConsole: '&c该命令只能由玩家运行！'
+  PlayerNotFound: '&c找不到该玩家！'
+  InvalidUsage: '&c无效使用！'
+  NotEnoughMaps: '&c您没有 {Amount} 地图！'
+  Oversize: '&c那太大了！地图的最大尺寸为 {MaxSize}'
+  URLRestricted: '&c该 URL 受到限制，不能用于创建图像映射。'
+  PlayerCreationLimitReached: '&c您一次只能创建 <Limit> 张地图！删除一些以创建新的'
+  DuplicateMapName: '&c您已经创建了具有该名称的图像映射！'
+  MapLookup: '&b图像映射列表 {CreatorName} ({CreatorUUID}):'
+  ItemFrameOccupied: '&c无法在选定的 ItemFrame 上放置或删除某些地图，它们被破坏、替换、占用或保护。'
+  NotEnoughSpace: '&c由于空间不足，无法放置组合图像地图。'
+  InvalidImageMap: '&c该图像映射可能已被删除。'
+  AccessPermission:
+    Updated: '&a更新了访问权限 {PlayerName} ({PlayerUUID}), 他们现在有 {Permission} 权限。'
+    Types:
+      NONE: NONE
+      GET: GET
+      MARKER: MARKER
+      EDIT: EDIT
+      EDIT_CLONE: EDIT WITH CLONE
+      ALL: ALL
+  Selection:
+    Begin: '&b右键单击项目框架以选择角 1 和角 2'
+    Clear: '&e离开选择模式'
+    Corner1: '&a所选项目框角 1'
+    Corner2: '&a所选项目框角 2'
+    Invalid: '&c选择无效！'
+    Oversize: '&c超大选择！地图的最大尺寸为 {MaxSize}'
+    Success: '&a选择了 {Width} x {Height} 物品框架！ &e如果其中任何一个被删除/替换，您将需要再次选择它们。'
+    NoSelection: '&c您还没有有效的选择。'
+    IncorrectSize: '&c您选择的尺寸不匹配，需要 {Width} x {Height}。'
+  Markers:
+    AddBegin: '&a右键单击包含地图 “{Name}” 的物品展示框以放置标记！ &b运行 “/imageframe mark cancel” 以取消放置'
+    AddConfirm: '&a标记已放置！'
+    Remove: '&e标记已移除！'
+    Clear: '&e标记已清除！'
+    Cancel: '&e标记放置已取消！'
+    DuplicateName: '&c已经有一个具有该名称的标记！'
+    NotAMarker: '&c这不是一个有效的标记'
+    NotRenderOnFrameWarning: '&e警告：此标记类型不会在物品展示框中呈现！'
+    LimitReached: '&c您只能在一张地图上创建 {Limit} 个标记！'
+  # Date format used where a time based variable is displayed
+  DateFormat: dd/MM/yyyy HH:mm:ss zzz
+  Preferences:
+    Keys:
+      VIEW_ANIMATED_MAPS: 查看动画地图
+    Values:
+      'TRUE': '&aEnabled'
+      'FALSE': '&cDisabled'
+      UNSET: '&7Unset'
+    UpdateMessage: '&e玩家偏好 {Preference}&e 已更新为 {Value}&e!'
+
+Settings:
+  MapItemFormat: '&f{Name} &7({X}, {Y})'
+  # Whether empty maps are required to create image maps when not in creative
+  RequireEmptyMaps: true
+  # Max size of an image map
+  MaxSize: 100
+  # When enabled, Only websites from the list below is allowed to be shown through in-game maps
+  RestrictImageUrl:
+    Enabled: false
+    Whitelist:
+      - https://i.imgur.com
+      - http://i.imgur.com
+      - https://storage.googleapis.com
+      - http://storage.googleapis.com
+      - https://cdn.discordapp.com
+      - http://cdn.discordapp.com
+      - https://media.discordapp.net
+      - http://media.discordapp.net
+      - https://textures.minecraft.net
+      - http://textures.minecraft.net
+  # If the image is larger than the defined size, it won't be downloaded for preview
+  # (In Bytes)
+  MaxImageFileSize: 52428800
+  # Max amount of image maps a player in the following groups can create
+  # Setting -1 means unlimited
+  # To add a player to a group, give the permission "imageframe.createlimit.<group>"
+  # For example "imageframe.createlimit.vip"
+  # Players with no groups will be treated as "default" unless they have "imageframe.createlimit.unlimited"
+  PlayerCreationLimit:
+    default: 10
+    vip: 15
+    moderator: 20
+  # Max amount of markers on an individual map
+  MapMarkerLimit: 20
+  CombinedMapItem:
+    Name: '&b图片地图 &f- &f{Name} &7({Width} x {Height})'
+    Lore:
+      - '&a在物品展示框右键 尺寸 {Width} x {Height} 来防止图片'
+      - ''
+      - '&7图片ID: {ImageID}'
+      - '&7创作者: {CreatorName} ({CreatorUUID})'
+      - '&7创作时间: {TimeCreated}'
+  # How many map packets can be sent to a player in 1/20 of a second
+  # You can turn this down if you are facing network issues
+  # However maps might take longer to show to a player
+  # To disable the rate limit, set to -1
+  MapPacketSendingRateLimit: -1
+  # Exempt certain map ids from deletion if their ImageFrame map is deleted
+  # Values can be map ids (For example: "13") or ranges (inclusive) of map ids (For example: "10-13")
+  ExemptMapIdsFromDeletion:
+    - '-1'
+  # This option should only be useful to developers and people who knew what they are doing
+  MapRenderersContextual: false
+  # Changing this option requires a restart
+  HandleAnimatedMapsOnMainThread: false
+  SendAnimatedMapsOnMainThread: false
+
+Hooks:
+  ViaVersion:
+    # Enable this if your players below 1.13 is having network issues
+    DisableSmoothAnimationForLegacyPlayers: false
+# Enable update notifications for admins
+Updater: true
