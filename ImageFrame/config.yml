@@ -116,7 +116,7 @@ Settings:
   CombinedMapItem:
     Name: '&b图片地图 &f- &f{Name} &7({Width} x {Height})'
     Lore:
-      - '&a在物品展示框右键 尺寸 {Width} x {Height} 来防止图片'
+      - '&a在物品展示框右键 尺寸 {Width} x {Height} 来放置图片'
       - ''
       - '&7图片ID: {ImageID}'
       - '&7创作者: {CreatorName} ({CreatorUUID})'
